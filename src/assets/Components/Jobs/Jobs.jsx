@@ -13,7 +13,7 @@ const Jobs = () => {
                 salary: "₹30K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "1-3 Year Experience",
-                img: "public/img/jobs-1.png"
+                img: "img/jobs-1.png"
             }
         },
         {
@@ -24,7 +24,7 @@ const Jobs = () => {
                 salary: "₹40K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "2 Year Experience",
-                img: "public/img/jobs-2.png"
+                img: "img/jobs-2.png"
             }
         },
         {
@@ -35,7 +35,7 @@ const Jobs = () => {
                 salary: "₹25K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "4 Year Experience",
-                img: "public/img/jobs-3.png"
+                img: "img/jobs-3.png"
             }
         },
         {
@@ -46,7 +46,7 @@ const Jobs = () => {
                 salary: "₹35K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "1-2 Year Experience",
-                img: "public/img/jobs-4.png"
+                img: "img/jobs-4.png"
             }
         },
         {
@@ -57,7 +57,7 @@ const Jobs = () => {
                 salary: "₹45K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "3 Year Experience",
-                img: "public/img/jobs-5.png"
+                img: "img/jobs-5.png"
             }
         },
         {
@@ -68,7 +68,7 @@ const Jobs = () => {
                 salary: "₹30K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "1 Year Experience",
-                img: "public/img/jobs-6.png"
+                img: "img/jobs-6.png"
             }
         }
       
@@ -83,7 +83,7 @@ const Jobs = () => {
                 salary: "₹30K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "1-3 Year Experience",
-                img: "public/img/jobs-1.png"
+                img: "img/jobs-1.png"
             }
         },
         {
@@ -94,7 +94,7 @@ const Jobs = () => {
                 salary: "₹40K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "2 Year Experience",
-                img: "public/img/jobs-2.png"
+                img: "img/jobs-2.png"
             }
         },
         {
@@ -105,7 +105,7 @@ const Jobs = () => {
                 salary: "₹25K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "4 Year Experience",
-                img: "public/img/jobs-3.png"
+                img: "img/jobs-3.png"
             }
         },
         {
@@ -116,7 +116,7 @@ const Jobs = () => {
                 salary: "₹35K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "1-2 Year Experience",
-                img: "public/img/jobs-4.png"
+                img: "img/jobs-4.png"
             }
         },
         {
@@ -127,7 +127,7 @@ const Jobs = () => {
                 salary: "₹45K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "3 Year Experience",
-                img: "public/img/jobs-5.png"
+                img: "img/jobs-5.png"
             }
         },
         {
@@ -138,7 +138,7 @@ const Jobs = () => {
                 salary: "₹30K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "1 Year Experience",
-                img: "public/img/jobs-6.png"
+                img: "img/jobs-6.png"
             }
         },
         {
@@ -149,7 +149,7 @@ const Jobs = () => {
                 salary: "₹25K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "0-1 Year Experience",
-                img: "public/img/jobs-7.png"
+                img: "img/jobs-7.png"
             }
         },
         {
@@ -160,7 +160,7 @@ const Jobs = () => {
                 salary: "₹50K Monthly",
                 typeofjob: "Full-Time (Hybrid)",
                 exp: "3+ Years Experience",
-                img: "public/img/jobs-8.png"
+                img: "img/jobs-8.png"
             }
         },
         {
@@ -171,7 +171,7 @@ const Jobs = () => {
                 salary: "₹40K Monthly",
                 typeofjob: "Contract (Remote)",
                 exp: "2+ Year Experience",
-                img: "public/img/jobs-9.png"
+                img: "img/jobs-9.png"
             }
         },
         {
@@ -182,7 +182,7 @@ const Jobs = () => {
                 salary: "₹25K Monthly",
                 typeofjob: "Full Time (On Site)",
                 exp: "1-3 Years Experience",
-                img: "public/img/jobs-10.png"
+                img: "img/jobs-10.png"
             }
         }
       
