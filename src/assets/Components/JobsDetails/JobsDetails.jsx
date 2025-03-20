@@ -7,11 +7,11 @@ const JobsDetails = () => {
     return (
         <>
         <div className="relative">
-            <div className="bg-[url('/public/img/main-bg.jpg')] h-[77vh] bg-center bg-no-repeat bg-cover relative brightness-[100%]  opacity-20 rounded-b-4xl"></div>
+            <div className="bg-[url('img/main-bg.jpg')] h-[77vh] bg-center bg-no-repeat bg-cover relative brightness-[100%]  opacity-20 rounded-b-4xl"></div>
             <div className="absolute top-20 left-110">
                 <div className="items-center flex justify-center">
                     <div className=" inline-block mb-5 shadow-xl rounded-full border-2 border-slate-300">
-                        <img className="w-[6vw] " src="/public/img/jobs-1.png" alt="" />
+                        <img className="w-[6vw] " src="img/jobs-1.png" alt="" />
                     </div>
                 </div>
                 <div className="items-center">
@@ -20,19 +20,19 @@ const JobsDetails = () => {
                 </div>
                 <div className="border-b border-t border-slate-300 pb-5 flex gap-25 text-lg items-center justify-center mt-5 pt-5">
                             <div className="flex gap-2 items-center">
-                                <img className="w-[1vw] h-[2vh]" src="/public/img/location-jobs.png" alt="" />
+                                <img className="w-[1vw] h-[2vh]" src="img/location-jobs.png" alt="" />
                                 <h1 className=" text-[#2f00fefe]" >Rampur</h1>
                             </div>
                             <div className="flex gap-2 items-center">
-                                <img className="w-[1vw] h-[2vh]" src="/public/img/money-jobs.png" alt="" />
+                                <img className="w-[1vw] h-[2vh]" src="img/money-jobs.png" alt="" />
                                 <h1 className=" text-[#2f00fefe]">78555</h1>
                             </div>
                             <div className="flex gap-2 items-center">
-                                <img src="/public/img/hourglass.png" alt="" />
+                                <img src="img/hourglass.png" alt="" />
                                 <h1 className=" text-[#2f00fefe]">Remote</h1>
                             </div>
                             <div className="flex gap-2 items-center">
-                            <img src="/public/img/briefcase.png" alt="" />
+                            <img src="img/briefcase.png" alt="" />
                                 <h1 className=" text-[#2f00fefe]">1-3 exp</h1>
                             </div>
                         </div>
@@ -53,49 +53,49 @@ const JobsDetails = () => {
                            
                             <div className="">
                                 <div className="flex gap-2 items-center border-t border-[#696c89] pt-5">
-                                    <img className="w-[1.5vw]" src="/public/img/location-details.png" alt="" />
+                                    <img className="w-[1.5vw]" src="img/location-details.png" alt="" />
                                     <h1 className="  text-[#696c89]" >Location</h1>
                                 </div>
                                 <div className="ml-8 text-[#2f00fefe] ">Bengaluru,India</div>
                             </div>
                             <div className="">
                                 <div className="flex gap-2 items-center  pt-5">
-                                    <img className="w-[1.5vw]" src="/public/img/chart.png" alt="" />
+                                    <img className="w-[1.5vw]" src="img/chart.png" alt="" />
                                     <h1 className="  text-[#696c89]" >Career Level</h1>
                                 </div>
                                 <div className="ml-8 text-[#2f00fefe] ">Senior / Expert</div>
                             </div>
                             <div className="">
                                 <div className="flex gap-2 items-center  pt-5">
-                                    <img className="w-[1.5vw]" src="/public/img/hourglass.png" alt="" />
+                                    <img className="w-[1.5vw]" src="img/hourglass.png" alt="" />
                                     <h1 className="  text-[#696c89]" >Career Level</h1>
                                 </div>
                                 <div className="ml-8 text-[#2f00fefe] ">Senior / Expert</div>
                             </div>
                             <div className="">
                                 <div className="flex gap-2 items-center  pt-5">
-                                    <img className="w-[1.5vw]" src="/public/img/pencil.png" alt="" />
+                                    <img className="w-[1.5vw]" src="img/pencil.png" alt="" />
                                     <h1 className="  text-[#696c89]" >Job Type</h1>
                                 </div>
                                 <div className="ml-8 text-[#2f00fefe] ">Customer Support Associate</div>
                             </div>
                             <div className="">
                                 <div className="flex gap-2 items-center  pt-5">
-                                    <img className="w-[1.5vw]" src="/public/img/briefcase.png" alt="" />
+                                    <img className="w-[1.5vw]" src="img/briefcase.png" alt="" />
                                     <h1 className="  text-[#696c89]" >Experience</h1>
                                 </div>
                                 <div className="ml-8 text-[#2f00fefe] ">1 - 3 Year Experience</div>
                             </div>
                             <div className="">
                                 <div className="flex gap-2 items-center  pt-5">
-                                    <img className="w-[1.5vw]" src="/public/img/money-jobs.png" alt="" />
+                                    <img className="w-[1.5vw]" src="img/money-jobs.png" alt="" />
                                     <h1 className="  text-[#696c89]" >Salary</h1>
                                 </div>
                                 <div className="ml-8 text-[#2f00fefe] ">3000 Monthly</div>
                             </div>
                             <div className="mb-5">
                                 <div className="flex gap-2 items-center  pt-5">
-                                    <img className="w-[1.5vw]" src="/public/img/date.png" alt="" />
+                                    <img className="w-[1.5vw]" src="img/date.png" alt="" />
                                     <h1 className="  text-[#696c89]" >Date posted</h1>
                                 </div>
                                 <div className="ml-8 text-[#2f00fefe] ">1 April, 2025</div>
@@ -201,16 +201,16 @@ const JobsDetails = () => {
                 <div className="text-[#2f00fefe] font-semibold text-xl mb-5 mt-10">Company Photo</div>
                 <div className="grid grid-cols-3 gap-2 mb-10">
                     <div className="flex flex-col gap-2">
-                        <img src="public/img/office-pic-1.jpg" alt="" />
-                        <img src="public/img/office-pic-4.jpg" alt="" />
+                        <img src="img/office-pic-1.jpg" alt="" />
+                        <img src="img/office-pic-4.jpg" alt="" />
                     </div>
                     <div className="flex flex-col gap-2">
-                        <img src="public/img/office-pic-2.jpg" alt="" />
-                        <img src="public/img/office-pic-5.jpg" alt="" />
+                        <img src="img/office-pic-2.jpg" alt="" />
+                        <img src="img/office-pic-5.jpg" alt="" />
                     </div>
                     <div className="flex flex-col gap-2">
-                        <img src="public/img/office-pic-3.jpg" alt="" />
-                        <img src="public/img/office-pic-6.jpg" alt="" />
+                        <img src="img/office-pic-3.jpg" alt="" />
+                        <img src="img/office-pic-6.jpg" alt="" />
                     </div>
                 </div>
                 <div>
@@ -253,9 +253,9 @@ const JobsDetails = () => {
                 <div className="flex items-center mt-10 mb-5 gap-5">
                     <h1 className="text-[#2f00fefe] text-xl font-semibold  ">Share this job: </h1>
                     <div className="flex gap-3">
-                        <img className="w-[1.5vw] h-[3vh]" src="public/img/facebook.png" alt="" />
-                        <img className="w-[1.5vw] h-[3vh]" src="public/img/twitter.png" alt="" />
-                        <img className="w-[1.5vw] h-[3vh]" src="public/img/linkedin-jobs.png" alt="" />
+                        <img className="w-[1.5vw] h-[3vh]" src="img/facebook.png" alt="" />
+                        <img className="w-[1.5vw] h-[3vh]" src="img/twitter.png" alt="" />
+                        <img className="w-[1.5vw] h-[3vh]" src="img/linkedin-jobs.png" alt="" />
                     </div>
                 </div>
             </div>

@@ -29,7 +29,7 @@ const Footer = () => {
 
         
             <div className={` fixed bottom-0 h-screen`}>
-                <img className= "fixed h-[100vh] w-[100vw] bg-center bg-cover  bottom-0"  src="public/img/footer-bg.jpg" alt="" />
+                <img className= "fixed h-[100vh] w-[100vw] bg-center bg-cover  bottom-0"  src="img/footer-bg.jpg" alt="" />
               <div className="absolute bg-[#2f00ffe2] h-[100vh] w-[100vw] bottom-0">
 
                     <div className="flex justify-between p-10 items-center w-[90vw] mx-auto border-b border-[#ffffff24] pb-10">
@@ -42,7 +42,7 @@ const Footer = () => {
                         <div className="">
                             <div className="flex gap-2">
                                     <input className="bg-white border border-[#ffffff24] rounded-md py-5 pr-40 pl-5" type="text" placeholder="Email"/>
-                                    <button className="flex items-center gap-4 text-white py-2 px-10 rounded-md border cursor-pointer hover:bg-blue-400"> <img className="" src="/public/img/arrow-right.png" alt="" />  Subscribe</button>
+                                    <button className="flex items-center gap-4 text-white py-2 px-10 rounded-md border cursor-pointer hover:bg-blue-400"> <img className="" src="img/arrow-right.png" alt="" />  Subscribe</button>
                                 </div>
                                 <div className="mt-5">
                                     <h1 className="text-white">✌️ We Promise not spam.</h1>
@@ -63,7 +63,7 @@ const Footer = () => {
                         <h1 className="text-[#d3caca]">Social Media</h1>
                         <div className='flex gap-2'>
                             <div className='p-3 bg-white rounded-full inline-block'>
-                                <img className='' src="public/img/instagram.png" alt="" />
+                                <img className='' src="img/instagram.png" alt="" />
                             </div>
                             <div className='p-3 bg-white rounded-full inline-block'>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" color="#2f00ff" fill="blue">
@@ -91,7 +91,7 @@ const Footer = () => {
                     </div>
                     <div className="">
                         <div className="flex justify-center mb-5">
-                            <img className="w-[7vw] rounded-full bg-center bg-cover border-4 border-[#ffffff24]" src="public/img/logo.jpg" alt="" />
+                            <img className="w-[7vw] rounded-full bg-center bg-cover border-4 border-[#ffffff24]" src="img/logo.jpg" alt="" />
                         </div>
                         <p className="text-[#d3caca]">Right Path is a trusted platform connecting job seekers with top employers. We provide genuine opportunities, affordable training, and expert HR solutions to empower careers and businesses across India.</p>
                     </div>

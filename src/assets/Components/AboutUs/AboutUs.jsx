@@ -79,11 +79,11 @@ const AboutUs = () => {
                         </div>
                 </div>
                 
-                <img className="mt-10 h-[60vh] w-[80vw] mx-auto" src="/public/img/bg-aboutus.png" alt="" />
+                <img className="mt-10 h-[60vh] w-[80vw] mx-auto" src="img/bg-aboutus.png" alt="" />
 
                 <div className="flex justify-between w-[90vw] mx-auto items-center mt-20">
                     <h1 className="text-2xl text-[#2f00fefe] font-bold mb-3">Your Success Starts With Our Expert Team</h1>
-                    <button className="flex items-center gap-4 text-white bg-[#2f00fefe] py-2 px-10 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-blue-600"> <img className="w-[1.5vw]" src="/public/img/icons8-arrow-50.png" alt="" /> Meet All Team</button>
+                    <button className="flex items-center gap-4 text-white bg-[#2f00fefe] py-2 px-10 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-blue-600"> <img className="w-[1.5vw]" src="img/icons8-arrow-50.png" alt="" /> Meet All Team</button>
                 </div>
 
 
@@ -94,7 +94,7 @@ const AboutUs = () => {
                     </div>
                     <div className="flex gap-2">
                         <input className=" bg-white border border-slate-300 rounded-md pr-220 pl-5" type="text" placeholder="Your Email"/>
-                        <button className="flex items-center gap-4 text-white bg-[#2f00fefe] py-2 px-10 rounded-md cursor-pointer hover:shadow-sm hover:shadow-cyan-900"> <img className="w-[1.5vw]" src="/public/img/icons8-arrow-50.png" alt="" /> Subscribe</button>
+                        <button className="flex items-center gap-4 text-white bg-[#2f00fefe] py-2 px-10 rounded-md cursor-pointer hover:shadow-sm hover:shadow-cyan-900"> <img className="w-[1.5vw]" src="img/icons8-arrow-50.png" alt="" /> Subscribe</button>
                     </div>
                     <div className="mt-5">
                         <h1 className="text-[#696C89]">✌️ We Promise not spam.</h1>

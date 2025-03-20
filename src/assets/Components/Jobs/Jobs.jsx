@@ -248,29 +248,29 @@ const Jobs = () => {
 
                         <div className="border-b border-slate-300 pb-5">
                             <div className="flex gap-2 items-center mt-5">
-                                <img className="w-[1vw] h-[2vh]" src="/public/img/location-jobs.png" alt="" />
+                                <img className="w-[1vw] h-[2vh]" src="img/location-jobs.png" alt="" />
                                 <h1 className=" text-[#696c89]" >{item.job1.location}</h1>
                             </div>
                             <div className="flex gap-2 items-center">
-                                <img className="w-[1vw] h-[2vh]" src="/public/img/money-jobs.png" alt="" />
+                                <img className="w-[1vw] h-[2vh]" src="img/money-jobs.png" alt="" />
                                 <h1 className=" text-[#696c89]">{item.job1.salary}</h1>
                             </div>
                             <div className="flex gap-2 items-center">
-                                <img src="/public/img/hourglass.png" alt="" />
+                                <img src="img/hourglass.png" alt="" />
                                 <h1 className=" text-[#696c89]">{item.job1.typeofjob}</h1>
                             </div>
                             <div className="flex gap-2 items-center">
-                            <img src="/public/img/briefcase.png" alt="" />
+                            <img src="img/briefcase.png" alt="" />
                                 <h1 className=" text-[#696c89]">{item.job1.exp}</h1>
                             </div>
                         </div>
 
                         <div className="flex gap-10 mt-5">
                             <Link to="/jobsdetails">
-                                <button className="flex items-center gap-2 text-white bg-[#2f00fefe] py-2 px-5 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-cyan-600"> <img className="w-[1.5vw]" src="/public/img/icons8-arrow-50.png" alt="" />View Details</button>
+                                <button className="flex items-center gap-2 text-white bg-[#2f00fefe] py-2 px-5 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-cyan-600"> <img className="w-[1.5vw]" src="img/icons8-arrow-50.png" alt="" />View Details</button>
                             </Link>
                             <div className="flex items-center gap-2">
-                            <img className="w-[1vw]" src="/public/img/time-jobs.png" alt="" />
+                            <img className="w-[1vw]" src="img/time-jobs.png" alt="" />
                                 <h1 className=" text-[#696c89]">Update2days ago</h1>
                             </div>
                         </div>

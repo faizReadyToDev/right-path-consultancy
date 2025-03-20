@@ -45,15 +45,15 @@ const Review = () => {
                     <div className="absolute bottom-[55px] left-[50px]">
                         <div className="inline-block">
 
-                            <img className="w-[5vw] rounded-full" src="public/img/main-1.png" />
+                            <img className="w-[5vw] rounded-full" src="img/main-1.png" />
                         </div>
                         <div className="flex  mb-3">
 
-                            <img  className="w-[1vw]" src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
+                            <img  className="w-[1vw]" src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
                         </div>
                         <h1 className="text-lg text-[#2f00fefe]">Rohit Sharma</h1>
                         <h1 className="text-[#696C89]">Software Engineer</h1>
@@ -72,15 +72,15 @@ const Review = () => {
                     <div className="absolute bottom-[55px] left-[50px]">
                         <div className="inline-block">
 
-                            <img className="w-[5vw] rounded-full" src="public/img/main-1.png" />
+                            <img className="w-[5vw] rounded-full" src="img/main-1.png" />
                         </div>
                         <div className="flex  mb-3">
 
-                            <img  className="w-[1vw]" src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
+                            <img  className="w-[1vw]" src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
                         </div>
                         <h1 className="text-lg text-[#2f00fefe]">Rohit Sharma</h1>
                         <h1 className="text-[#696C89]">Software Engineer</h1>
@@ -99,15 +99,15 @@ const Review = () => {
                     <div className="absolute bottom-[55px] left-[50px]">
                         <div className="inline-block">
 
-                            <img className="w-[5vw] rounded-full" src="public/img/main-1.png" />
+                            <img className="w-[5vw] rounded-full" src="img/main-1.png" />
                         </div>
                         <div className="flex  mb-3">
 
-                            <img  className="w-[1vw]" src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
+                            <img  className="w-[1vw]" src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
                         </div>
                         <h1 className="text-lg text-[#2f00fefe]">Rohit Sharma</h1>
                         <h1 className="text-[#696C89]">Software Engineer</h1>
@@ -125,15 +125,15 @@ const Review = () => {
                     <div className="absolute bottom-[55px] left-[50px] z-10">
                         <div className="inline-block">
 
-                            <img className="w-[5vw] rounded-full" src="public/img/main-1.png" />
+                            <img className="w-[5vw] rounded-full" src="img/main-1.png" />
                         </div>
                         <div className="flex  mb-3">
 
-                            <img  className="w-[1vw]" src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
+                            <img  className="w-[1vw]" src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
                         </div>
                         <h1 className="text-lg text-[#2f00fefe]">Rohit Sharma</h1>
                         <h1 className="text-[#696C89]">Software Engineer</h1>
@@ -150,15 +150,15 @@ const Review = () => {
                     <div className="absolute bottom-[55px] left-[50px]">
                         <div className="inline-block">
 
-                            <img className="w-[5vw] rounded-full" src="public/img/main-1.png" />
+                            <img className="w-[5vw] rounded-full" src="img/main-1.png" />
                         </div>
                         <div className="flex  mb-3">
 
-                            <img  className="w-[1vw]" src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" />
+                            <img  className="w-[1vw]" src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img className="w-[1vw]"  src="img/star.png" />
                         </div>
                         <h1 className="text-lg text-[#2f00fefe]">Rohit Sharma</h1>
                         <h1 className="text-[#696C89]">Software Engineer</h1>

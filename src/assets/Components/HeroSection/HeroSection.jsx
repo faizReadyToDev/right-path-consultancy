@@ -29,7 +29,7 @@ const HeroSection = () => {
            <div className="">
 
            
-               <div className="bg-[url('/public/img/main-bg.jpg')] h-[77vh] bg-center bg-no-repeat bg-cover relative brightness-[100%]  opacity-20 rounded-b-4xl"></div>
+               <div className="bg-[url('img/main-bg.jpg')] h-[77vh] bg-center bg-no-repeat bg-cover relative brightness-[100%]  opacity-20 rounded-b-4xl"></div>
                 <div className="grid grid-cols-4 absolute top-50 items-center">
 
                 <div className="">
@@ -72,22 +72,22 @@ const HeroSection = () => {
                     
                     <div className="mt-10 ml-20 flex items-center">
 
-                        <button className="flex items-center gap-4 text-white bg-[#2f00fefe] py-2 px-10 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-blue-600"> <img className="w-[1.5vw]" src="/public/img/icons8-arrow-50.png" alt="" /> Get Started</button>
+                        <button className="flex items-center gap-4 text-white bg-[#2f00fefe] py-2 px-10 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-blue-600"> <img className="w-[1.5vw]" src="img/icons8-arrow-50.png" alt="" /> Get Started</button>
 
                         <div className="flex items-center">
                             <div className="flex relative items-center">
 
                                 <div className="w-[4vw] border-[3.5px] border-white rounded-full absolute left-[15px]">
-                                    <img className="rounded-full" src="public/img/main-1.png" alt="" />
+                                    <img className="rounded-full" src="img/main-1.png" alt="" />
                                 </div>
                                 <div className=" w-[4vw] border-[3.5px] border-white rounded-full absolute left-[60px]">
-                                    <img className="rounded-full" src="public/img/main-2.png" alt="" />
+                                    <img className="rounded-full" src="img/main-2.png" alt="" />
                                 </div>
                                 <div className=" w-[4vw] border-[3.5px] border-white rounded-full absolute left-[105px]">
-                                    <img className="rounded-full" src="public/img/main-3.jpg" alt="" />
+                                    <img className="rounded-full" src="img/main-3.jpg" alt="" />
                                 </div>
                                 <div className=" w-[4vw] border-[3.5px] border-white rounded-full absolute left-[150px]">
-                                    <img className="rounded-full" src="public/img/main-4.jpg" alt="" />
+                                    <img className="rounded-full" src="img/main-4.jpg" alt="" />
                                 </div>
                             </div>
                             <span className="text-[#2f00fefe] font-bold ml-[220px]">5K+ Active Members</span>
@@ -132,40 +132,40 @@ const HeroSection = () => {
             <div className=" h-[30vh] items-center shadow-xl rounded-4xl bg-slate-100 justify-center py-10 animationSlider overflow-x-hidden">
                 <h1 className="text-gray-500 text-center font-semibold mb-15">Collaborating with <span className="text-blue-800 font-bold">3200+ </span>international renowned companies</h1>
                 <div className="flex  justify-evenly gap-14 logo-slider ">
-                    <img  className="w-[10vw]" src="/public/img/company-1.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-2.png" alt="" />
-                    <img  className="w-[10vw]" src="/public/img/company-3.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-4.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-5.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-6.png" alt="" />
-                    <img  className="w-[10vw]" src="/public/img/company-7.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-8.png" alt="" />
+                    <img  className="w-[10vw]" src="img/company-1.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-2.png" alt="" />
+                    <img  className="w-[10vw]" src="img/company-3.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-4.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-5.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-6.png" alt="" />
+                    <img  className="w-[10vw]" src="img/company-7.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-8.png" alt="" />
 
 
-                    <img  className="w-[10vw]" src="/public/img/company-1.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-2.png" alt="" />
-                    <img  className="w-[10vw]" src="/public/img/company-3.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-4.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-5.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-6.png" alt="" />
-                    <img  className="w-[10vw]" src="/public/img/company-7.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-8.png" alt="" />
-                    <img  className="w-[10vw]" src="/public/img/company-1.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-2.png" alt="" />
-                    <img  className="w-[10vw]" src="/public/img/company-3.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-4.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-5.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-6.png" alt="" />
-                    <img  className="w-[10vw]" src="/public/img/company-7.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-8.png" alt="" />
-                    <img  className="w-[10vw]" src="/public/img/company-1.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-2.png" alt="" />
-                    <img  className="w-[10vw]" src="/public/img/company-3.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-4.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-5.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-6.png" alt="" />
-                    <img  className="w-[10vw]" src="/public/img/company-7.png" alt="" />
-                    <img className="w-[10vw]"  src="/public/img/company-8.png" alt="" />
+                    <img  className="w-[10vw]" src="img/company-1.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-2.png" alt="" />
+                    <img  className="w-[10vw]" src="img/company-3.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-4.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-5.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-6.png" alt="" />
+                    <img  className="w-[10vw]" src="img/company-7.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-8.png" alt="" />
+                    <img  className="w-[10vw]" src="img/company-1.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-2.png" alt="" />
+                    <img  className="w-[10vw]" src="img/company-3.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-4.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-5.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-6.png" alt="" />
+                    <img  className="w-[10vw]" src="img/company-7.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-8.png" alt="" />
+                    <img  className="w-[10vw]" src="img/company-1.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-2.png" alt="" />
+                    <img  className="w-[10vw]" src="img/company-3.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-4.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-5.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-6.png" alt="" />
+                    <img  className="w-[10vw]" src="img/company-7.png" alt="" />
+                    <img className="w-[10vw]"  src="img/company-8.png" alt="" />
 
                 </div>
 
@@ -182,11 +182,11 @@ const HeroSection = () => {
                         <div className="flex-col justify-end">
                         <h1 className="text-4xl text-[#2f00fefe] font-bold mb-3 flex justify-end">764K</h1>
                         <div className="flex mb-3 justify-end">
-                            <img className="w-[1vw]" src="/public/img/star.png" alt="" />
-                            <img className="w-[1vw]" src="/public/img/star.png" alt="" />
-                            <img className="w-[1vw]" src="/public/img/star.png" alt="" />
-                            <img className="w-[1vw]" src="/public/img/star.png" alt="" />
-                            <img className="w-[1vw]" src="/public/img/star.png" alt="" />
+                            <img className="w-[1vw]" src="img/star.png" alt="" />
+                            <img className="w-[1vw]" src="img/star.png" alt="" />
+                            <img className="w-[1vw]" src="img/star.png" alt="" />
+                            <img className="w-[1vw]" src="img/star.png" alt="" />
+                            <img className="w-[1vw]" src="img/star.png" alt="" />
                         </div>
                         <h2 className="text-[#696C89] flex justify-end">Satisfied People</h2>
                         </div>
@@ -200,11 +200,11 @@ const HeroSection = () => {
                         <h1 className="text-4xl text-[#2f00fefe] font-bold mb-3 flex justify-end">1,812+K</h1>
                         <div className="flex  mb-3 justify-end">
 
-                            <img  className="w-[1vw]" src="/public/img/star.png" alt="" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" alt="" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" alt="" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" alt="" />
-                            <img className="w-[1vw]"  src="/public/img/star.png" alt="" />
+                            <img  className="w-[1vw]" src="img/star.png" alt="" />
+                            <img className="w-[1vw]"  src="img/star.png" alt="" />
+                            <img className="w-[1vw]"  src="img/star.png" alt="" />
+                            <img className="w-[1vw]"  src="img/star.png" alt="" />
+                            <img className="w-[1vw]"  src="img/star.png" alt="" />
                         </div>
                         <h2 className="text-[#696C89] flex justify-end">Global Company</h2>
                     </div>
