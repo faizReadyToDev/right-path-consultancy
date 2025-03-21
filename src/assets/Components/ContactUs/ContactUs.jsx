@@ -22,7 +22,7 @@ const ContactUs = () => {
         <div className={`${showDiv ? "scale-0" : "visible"}`}>
 
         
-        <div className="bg-[url('img/main-bg.jpg')] h-[50vh] bg-center bg-no-repeat bg-cover relative brightness-[100%]  opacity-20 rounded-b-4xl"></div>
+        <div className="bg-[url('/img/main-bg.jpg')] h-[50vh] bg-center bg-no-repeat bg-cover relative brightness-[100%]  opacity-20 rounded-b-4xl"></div>
             <div className="grid grid-cols-4 absolute top-50 items-center">
 
             <div className="">
