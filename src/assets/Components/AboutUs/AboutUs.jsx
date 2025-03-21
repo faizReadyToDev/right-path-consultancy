@@ -169,7 +169,21 @@ const AboutUs = () => {
                     <button className="flex items-center gap-4 text-white bg-[#2f00fefe] py-2 px-10 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-blue-600"> <img className="w-[1.5vw]" src="img/icons8-arrow-50.png" alt="" /> Meet All Team</button>
                 </div>
 
-                <div className='mt-10 p-20'>
+                <div className='mt-10 p-20 flex gap-30 w-[90vw] mx-auto'>
+                <div>
+                
+                <div className='bg-gray-100 w-[13vw] h-[60vh] rounded-t-full rounded-b-full pt-5 pb-5'>
+                    <div className='flex justify-center mt-10 mb-5'>
+                        <img className='w-[10vw] rounded-full' src="img/owner.jpg" alt="" />
+                    </div>
+                    <h1 className='text-center mb-3 text-[#2f00fefe] font-bold'>Umar Hayat Khan</h1>
+                    <h2 className='text-center mb-10 text-[#696C89] font-semibold'>Founder</h2>
+                    <div className='flex gap-5 justify-center'>
+                        <img className='w-[2vw]' src="img/linkedin-jobs.png" alt="" />
+                        <img className='w-[2vw]' src="img/ig.png" alt="" />
+                    </div>
+                </div>
+                </div>
                 <Swiper
             className='w-[60vw] mx-auto'
             slidesPerView={3}
@@ -239,7 +253,7 @@ const AboutUs = () => {
                     </div>
                 </div>
                 </SwiperSlide>
-                
+               
                 
                
                 
