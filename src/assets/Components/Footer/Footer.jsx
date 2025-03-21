@@ -5,7 +5,7 @@ const Footer = () => {
     useEffect(() => {
         const handleScroll = () => {
           if (
-            window.innerHeight + document.documentElement.scrollTop>=
+            window.innerHeight + document.documentElement.scrollTop + 1>=
             document.documentElement.offsetHeight
           ) {
             setShowDiv(true);
@@ -28,7 +28,7 @@ const Footer = () => {
             <div className={ ` ${showDiv ? "visible" : "scale-0"} z-10`}>
 
         
-            <div className={` fixed bottom-0 h-screen`}>
+            <div className={` fixed bottom-0`}>
                 <img className= "fixed h-[100vh] w-[100vw] bg-center bg-cover  bottom-0"  src="img/footer-bg.jpg" alt="" />
               <div className="absolute bg-[#2f00ffe2] h-[100vh] w-[100vw] bottom-0">
 

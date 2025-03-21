@@ -10,6 +10,7 @@ import ContactUs from './assets/Components/ContactUs/ContactUs'
 import Review from './assets/Components/Review/Review'
 import JobsDetails from './assets/Components/JobsDetails/JobsDetails'
 import { BrowserRouter as Router, Route , Routes} from 'react-router-dom'
+import Company from './assets/Components/Company/Company'
 
 
 function App() {
@@ -23,8 +24,8 @@ function App() {
         <Routes>
 
           <Route path = "/" element = {<HeroSection/> }/>
-          <Route path = "/jobs" element = { <Jobs/> }/>
-          <Route path = "/company" element = {<Jobs/> }/>
+          <Route path = "/jobs" element = {<Company/> }/>
+          <Route path = "/company" element = { <Company/> }/>
           <Route path = "/services" element = {<Services/> }/>
           <Route path = "/aboutus" element = {<AboutUs/> }/>
           <Route path = "/contactus" element = {<ContactUs /> }/>
@@ -34,9 +35,10 @@ function App() {
          
         
         </Routes>
-       
-       
+        
         <Footer />
+       
+      
       
        
         
