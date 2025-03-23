@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const Footer = () => {
+    const link = "https://www.instagram.com/right_pathconsultancy?igsh=MXZvdmRycDhmb2twdQ%3D%3D";
     const [showDiv,setShowDiv] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
@@ -62,7 +63,7 @@ const Footer = () => {
                         <h1 className='text-xl font-bold text-white mb-10'>-@gmail.com</h1>
                         <h1 className="text-[#d3caca]">Social Media</h1>
                         <div className='flex gap-2'>
-                            <div className='p-3 bg-white rounded-full inline-block'>
+                            <div onClick={() => window.open(link, '_blank')} className='cursor-pointer p-3 bg-white rounded-full inline-block'>
                                 <img className='' src="img/instagram.png" alt="" />
                             </div>
                             <div className='p-3 bg-white rounded-full inline-block'>

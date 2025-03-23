@@ -241,7 +241,8 @@ const Jobs = () => {
             <div className="w-[90vw] mx-auto grid grid-cols-3 gap-10"> 
                 {
                 jobs.map((item,index) => (
-                    <div className="p-9 inline-block border border-slate-300 rounded-lg" key={index}>
+                    <Link to={item.job1.link}>
+                    <div className="p-9 inline-block border border-slate-300 rounded-lg  box-shadow" key={index}>
                         <div className="flex gap-5 border-b border-slate-300 pb-5">
                             <div className="shadow-xl rounded-full border-2 border-slate-100">
                                 <img className="w-[4vw] " src={item.job1.img} alt="" />
@@ -282,6 +283,7 @@ const Jobs = () => {
                         </div>
 
                     </div>
+                    </Link>
                 ))
 
                 }

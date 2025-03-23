@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-
 const ContactUs = () => {
+    const link = "https://www.instagram.com/right_pathconsultancy?igsh=MXZvdmRycDhmb2twdQ%3D%3D";
      const [showDiv,setShowDiv] = useState(false);
         useEffect(() => {
             const handleScroll = () => {
@@ -161,10 +161,10 @@ const ContactUs = () => {
                                 </div>
                             </div>
                                 <div className='flex gap-2 mt-10 justify-end border-t border-[#dededf] pt-10'>
-                                    <div className='p-4 bg-white rounded-lg inline-block border border-[#2f00fefe]'>
+                                    <div onClick={() => window.open(link, '_blank')} className='cursor-pointer p-4 bg-white rounded-lg inline-block border border-[#2f00fefe]'>
                                         <img className='' src="img/instagram.png" alt="" />
                                     </div>
-                                    <div className='p-4 bg-white rounded-lg inline-block border border-[#2f00fefe]'>
+                                    <div className='p-4 cursor-pointer bg-white rounded-lg inline-block border border-[#2f00fefe]'>
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" color="#2f00ff" fill="blue">
                                         <path d="M4.5 9.5H4C3.05719 9.5 2.58579 9.5 2.29289 9.79289C2 10.0858 2 10.5572 2 11.5V20C2 20.9428 2 21.4142 2.29289 21.7071C2.58579 22 3.05719 22 4 22H4.5C5.44281 22 5.91421 22 6.20711 21.7071C6.5 21.4142 6.5 20.9428 6.5 20V11.5C6.5 10.5572 6.5 10.0858 6.20711 9.79289C5.91421 9.5 5.44281 9.5 4.5 9.5Z" stroke="currentColor" stroke-width="1.5" />
                                         <path d="M6.5 4.25C6.5 5.49264 5.49264 6.5 4.25 6.5C3.00736 6.5 2 5.49264 2 4.25C2 3.00736 3.00736 2 4.25 2C5.49264 2 6.5 3.00736 6.5 4.25Z" stroke="currentColor" stroke-width="1.5" />
