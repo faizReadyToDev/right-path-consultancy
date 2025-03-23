@@ -13,7 +13,8 @@ const Jobs = () => {
                 salary: "₹30K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "1-3 Year Experience",
-                img: "img/jobs-1.png"
+                img: "img/jobs-1.png",
+                link: "/amazon"
             }
         },
         {
@@ -24,7 +25,8 @@ const Jobs = () => {
                 salary: "₹40K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "2 Year Experience",
-                img: "img/jobs-2.png"
+                img: "img/jobs-2.png",
+                link: "/flipkart"
             }
         },
         {
@@ -35,7 +37,8 @@ const Jobs = () => {
                 salary: "₹25K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "4 Year Experience",
-                img: "img/jobs-3.png"
+                img: "img/jobs-3.png",
+                link: "/blinkit"
             }
         },
         {
@@ -46,7 +49,8 @@ const Jobs = () => {
                 salary: "₹35K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "1-2 Year Experience",
-                img: "img/jobs-4.png"
+                img: "img/jobs-4.png",
+                link: "/nobroker0"
             }
         },
         {
@@ -57,7 +61,8 @@ const Jobs = () => {
                 salary: "₹45K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "3 Year Experience",
-                img: "img/jobs-5.png"
+                img: "img/jobs-5.png",
+                link: "/teleperformance"
             }
         },
         {
@@ -68,7 +73,8 @@ const Jobs = () => {
                 salary: "₹30K Monthly",
                 typeofjob: "Full-Time(On-site)",
                 exp: "1 Year Experience",
-                img: "img/jobs-6.png"
+                img: "img/jobs-6.png",
+                link: "/swiggy"
             }
         }
       
@@ -266,7 +272,7 @@ const Jobs = () => {
                         </div>
 
                         <div className="flex gap-10 mt-5">
-                            <Link to="/jobsdetails">
+                            <Link to={item.job1.link}>
                                 <button className="flex items-center gap-2 text-white bg-[#2f00fefe] py-2 px-5 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-cyan-600"> <img className="w-[1.5vw]" src="img/icons8-arrow-50.png" alt="" />View Details</button>
                             </Link>
                             <div className="flex items-center gap-2">

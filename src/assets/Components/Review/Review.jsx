@@ -39,7 +39,7 @@ const Review = () => {
                 <div className='h-[60vh]'>
 
                     <div className="w-[25vw]">
-                        <p className="p-10 border text-lg text-[#696C89] border-[#dededf] rounded-lg">"Employee Guide helped me land my dream job with ease. The platform's simple interface and genuine job listings made my search stress-free. The team's support during the interview process was incredible!"</p>
+                        <p className="p-10 border text-lg text-[#696C89] border-[#dededf] rounded-lg">"Right Path helped me land my dream job with ease. The platform's simple interface and genuine job listings made my search stress-free. The team's support during the interview process was incredible!"</p>
             
                     </div>
                     <div className="absolute bottom-[55px] left-[50px]">
@@ -66,7 +66,7 @@ const Review = () => {
                 <div className='h-[60vh]'>
 
                     <div className="w-[25vw]">
-                        <p className="p-10 border text-lg text-[#696C89] border-[#dededf] rounded-lg">"Employee Guide helped me land my dream job with ease. The platform's simple interface and genuine job listings made my search stress-free. The team's support during the interview process was incredible!"</p>
+                        <p className="p-10 border text-lg text-[#696C89] border-[#dededf] rounded-lg">"Right Path helped me land my dream job with ease. The platform's simple interface and genuine job listings made my search stress-free. The team's support during the interview process was incredible!"</p>
             
                     </div>
                     <div className="absolute bottom-[55px] left-[50px]">
@@ -93,7 +93,7 @@ const Review = () => {
                 <div className='h-[60vh]'>
 
                     <div className="w-[25vw]">
-                        <p className="p-10 border text-lg text-[#696C89] border-[#dededf] rounded-lg">"Employee Guide helped me land my dream job with ease. The platform's simple interface and genuine job listings made my search stress-free. The team's support during the interview process was incredible!"</p>
+                        <p className="p-10 border text-lg text-[#696C89] border-[#dededf] rounded-lg">"Right Path helped me land my dream job with ease. The platform's simple interface and genuine job listings made my search stress-free. The team's support during the interview process was incredible!"</p>
                        
                     </div>
                     <div className="absolute bottom-[55px] left-[50px]">
@@ -119,7 +119,7 @@ const Review = () => {
                 <div className='h-[60vh]'>
 
                     <div className="w-[25vw]">
-                        <p className="p-10 border text-lg text-[#696C89] border-[#dededf] rounded-lg">"Employee Guide helped me land my dream job with ease. The platform's simple interface and genuine job listings made my search stress-free. The team's support during the interview process was incredible!"</p>
+                        <p className="p-10 border text-lg text-[#696C89] border-[#dededf] rounded-lg">"Right Path helped me land my dream job with ease. The platform's simple interface and genuine job listings made my search stress-free. The team's support during the interview process was incredible!"</p>
             
                     </div>
                     <div className="absolute bottom-[55px] left-[50px] z-10">
@@ -145,7 +145,7 @@ const Review = () => {
                 <div className='h-[60vh]'>
 
                     <div className="w-[25vw]">
-                        <p className="p-10 border text-lg text-[#696C89] border-[#dededf] rounded-lg">"Employee Guide helped me land my dream job with ease. The platform's simple interface and genuine job listings made my search stress-free. The team's support during the interview process was incredible!"</p>
+                        <p className="p-10 border text-lg text-[#696C89] border-[#dededf] rounded-lg">"Right Path helped me land my dream job with ease. The platform's simple interface and genuine job listings made my search stress-free. The team's support during the interview process was incredible!"</p>
                     </div>
                     <div className="absolute bottom-[55px] left-[50px]">
                         <div className="inline-block">

@@ -1,6 +1,10 @@
 import React from "react";
 
 import {NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
+import HandleScroll from "../ScrollToTopButton/ScrollToTopButton";
+import HandleWhatsAppClick from "../WhatsAppButton/WhatsAppButton";
+import WhatsAppButton from "../WhatsAppButton/WhatsAppButton";
 
 const Navbar = () => {
     return (
@@ -53,20 +57,22 @@ const Navbar = () => {
                         </li>
                   
                 </ul>
+                <Link
+                to="/contactus"
+                >
                     <span className="">
                         <button className="flex items-center gap-2 bg-white text-[#2f00fefe] border border-blue-400 shadow-cyan-900 shadow-xl rounded-lg px-4 py-2 cursor-pointer hover:shadow-xl hover:shadow-blue-400">
                         <img className="w-8" src="img/telephone.png" alt="" />
                             More Information</button>
                     </span>
+                </Link>
             </div>
         
         </div>
-        <div className="bg-blue-600 inline-block fixed bottom-10 left-10">
-            <img className="w-[2vw]" src="img/arrow-up.png" alt="" />
+        <div onClick={HandleScroll} className="bg-blue-600 inline-block cursor-pointer fixed bottom-10 left-10 z-20">
+            <img className=" cursor-pointer w-[2vw]" src="img/arrow-up.png" alt="" />
         </div>
-        <div className="bg-green-600 inline-block fixed bottom-10 right-10 rounded-full p-2 z-10">
-            <img className="w-[3vw]" src="img/whatsapp.png" alt="" />
-        </div>
+       <WhatsAppButton/>
        
         </>
 

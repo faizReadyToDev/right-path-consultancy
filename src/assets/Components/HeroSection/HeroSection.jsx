@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Jobs from "../Jobs/Jobs";
 import Review from "../Review/Review";
 import Services from "../Services/Services";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
 
@@ -71,8 +72,9 @@ const HeroSection = () => {
                     </div >
                     
                     <div className="mt-10 ml-20 flex items-center">
-
-                        <button className="flex items-center gap-4 text-white bg-[#2f00fefe] py-2 px-10 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-blue-600"> <img className="w-[1.5vw]" src="img/icons8-arrow-50.png" alt="" /> Get Started</button>
+                        <Link to="/company">
+                            <button className="flex items-center gap-4 text-white bg-[#2f00fefe] py-2 px-10 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-blue-600"> <img className="w-[1.5vw]" src="img/icons8-arrow-50.png" alt="" /> Get Started</button>
+                        </Link>
 
                         <div className="flex items-center">
                             <div className="flex relative items-center">
@@ -170,7 +172,6 @@ const HeroSection = () => {
                 </div>
 
             </div>
-            {/* rgb(228, 180, 84) */}
 
             <div className="flex justify-between mx-auto bg-white  rounded-4xl p-20">
                 <div className="w-[40vw]">

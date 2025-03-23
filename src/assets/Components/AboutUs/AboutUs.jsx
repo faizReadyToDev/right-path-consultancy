@@ -102,7 +102,7 @@ const AboutUs = () => {
                         
                                 <h1 className="text-lg text-[#2f00fefe] mb-3 mt-3 font-semibold">Who We Are?</h1>
                         </div>
-                            <h2 className="text-[#696c89] text-start pl-13">Employee Guide is a trusted platform dedicated to connecting job seekers with genuine, skill-based opportunities. With a focus on affordability and transparency, we help individuals find the right fit for their careers while supporting employers in discovering top talent.</h2>
+                            <h2 className="text-[#696c89] text-start pl-13">Right Path is a trusted platform dedicated to connecting job seekers with genuine, skill-based opportunities. With a focus on affordability and transparency, we help individuals find the right fit for their careers while supporting employers in discovering top talent.</h2>
                     </div>
                     <div className="p-4 border border-slate-300 w-[28vw] rounded-lg">
                         <div className="flex items-center gap-5">
