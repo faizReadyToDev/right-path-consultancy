@@ -10,6 +10,8 @@ const WhatsAppButton = () =>{
         const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(whatsappLink, "_blank");
         
+
+        
     }
 
     return (
@@ -22,3 +24,5 @@ const WhatsAppButton = () =>{
     
 }
 export default WhatsAppButton
+
+

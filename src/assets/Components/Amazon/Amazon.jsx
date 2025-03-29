@@ -220,7 +220,7 @@ const Amazon = () => {
                         <div>
                             <div>
                                 <h1 className="text-[#696c89] font-semibold mt-5">Registration No.</h1>
-                                <h1 className="text-[#2f00fefe] font-semibold  mb-5">ORBT-704182-XR</h1>
+                                <h1 className="text-[#2f00fefe] font-semibold  mb-5"></h1>
                             </div>
                             <div>
                                 <h1 className="text-[#696c89] font-semibold mt-5">Company Size</h1>

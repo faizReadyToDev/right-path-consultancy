@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const link = "https://www.instagram.com/right_pathconsultancy?igsh=MXZvdmRycDhmb2twdQ%3D%3D";
@@ -18,6 +19,11 @@ const Footer = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
       },[]);
+
+    const whatsAppHandle = () => {
+        const whatsappLink = `https://wa.me/916399010030?text=${encodeURIComponent("Hello, I would like to inquire about...")}`;
+        window.open(whatsappLink, "_blank");
+    }
 
     return (
 
@@ -78,17 +84,25 @@ const Footer = () => {
                     </div>
                     <div>
                         <h1 className="text-xl font-bold text-white mb-10">Support</h1>
-                        <h2 className="text-[#d3caca] mb-5 cursor-pointer">Help Center</h2>
-                        <h2 className="text-[#d3caca] mb-5 cursor-pointer">FAQ's</h2>
-                        <h2 className="text-[#d3caca] mb-5">Privacy Policy</h2>
-                        <h2 className="text-[#d3caca] mb-5">Terms and Conditions</h2>
+                        <h2 onClick={whatsAppHandle} className="text-[#d3caca] mb-5 cursor-pointer hover:text-white">Help Center</h2> 
+                        <h2 onClick={whatsAppHandle} className="text-[#d3caca] mb-5 cursor-pointer hover:text-white">FAQ's</h2>
+                        <h2 onClick={whatsAppHandle} className="text-[#d3caca] mb-5 cursor-pointer hover:text-white">Privacy Policy</h2>
+                        <h2 onClick={whatsAppHandle} className="text-[#d3caca] mb-5 cursor-pointer hover:text-white">Terms and Conditions</h2>
                     </div>
                     <div>
                         <h1 className="text-xl font-bold text-white mb-10" >Quick Links</h1>
-                        <h2 className="text-[#d3caca] mb-5">About Company</h2>
-                        <h2 className="text-[#d3caca] mb-5">Services</h2>
-                        <h2 className="text-[#d3caca] mb-5">Jobs</h2>
-                        <h2 className="text-[#d3caca] mb-5 cursor-pointer">Contact</h2>
+                        <Link to="/aboutus">
+                            <h2  className="text-[#d3caca] mb-5 hover:text-white cursor-pointer">About Company</h2>
+                        </Link>
+                        <Link to="/services">
+                            <h2 className="text-[#d3caca] mb-5 cursor-pointer hover:text-white">Services</h2>
+                        </Link>
+                        <Link to="/company">
+                            <h2 className="text-[#d3caca] mb-5 cursor-pointer hover:text-white">Jobs</h2>
+                        </Link>
+                        <Link to="/contactus">
+                            <h2 className="text-[#d3caca] mb-5 cursor-pointer hover:text-white">Contact</h2>
+                        </Link>
                     </div>
                     <div className="">
                         <div className="flex justify-center mb-5">

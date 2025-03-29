@@ -5,11 +5,36 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/module
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { useEffect , useState} from 'react';
 const AboutUs = () => {
+
+    const [showDiv, setShowDiv] = useState(false);
+
+    useEffect(()=>{
+
+        const handleScroll = () => {
+          if (
+            window.innerHeight + document.documentElement.scrollTop + 1>=
+            document.documentElement.offsetHeight
+          ) {
+            setShowDiv(true);
+          } else {
+            setShowDiv(false);
+          }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+
+
+
+    },[])
+
     const faizInsta = "https://www.instagram.com/iamfaiiizzzz/"
     const faizLinkedin = "https://www.linkedin.com/in/faiz-ur-rehman-400b36247"
     const umarInsta = "https://www.instagram.com/right_pathconsultancy?igsh=MXZvdmRycDhmb2twdQ%3D%3D";
     const umarLinkedin = "https://www.linkedin.com/in/faiz-ur-rehman-400b36247"
+
 
     return (
         <>
@@ -90,7 +115,7 @@ const AboutUs = () => {
 
 
 
-            <div className= {`mt-20 mb-40 `}>
+            <div className= {`mt-20 mb-60 `}>
 
                 <div className="w-[50vw] mx-auto text-center ">
                     <h1 className="text-3xl text-[#2f00fefe] font-bold mb-5">Your Gateway to a World of Career Opportunities</h1>
@@ -173,23 +198,23 @@ const AboutUs = () => {
                     <button className="flex items-center gap-4 text-white bg-[#2f00fefe] py-2 px-10 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-blue-600"> <img className="w-[1.5vw]" src="img/icons8-arrow-50.png" alt="" /> Meet All Team</button>
                 </div>
 
-                <div className='mt-10 p-20 flex gap-30 w-[90vw] mx-auto'>
+                <div className='mt-10 pb-20 pl-20 pr-20 pt-20 flex gap-30 w-[90vw] mx-auto'>
                 <div>
                 
-                <div className='bg-gray-100 w-[13vw] h-[60vh] rounded-t-full rounded-b-full pt-5 pb-5'>
+                <div className='bg-gray-100 w-[13vw] h-[55vh] rounded-t-full rounded-b-full pt-5 pb-5'>
                     <div className='flex justify-center mt-10 mb-5'>
                         <img className='w-[10vw] rounded-full' src="img/owner.jpg" alt="" />
                     </div>
                     <h1 className='text-center mb-3 text-[#2f00fefe] font-bold'>Umar Hayat Khan</h1>
                     <h2 className='text-center mb-10 text-[#696C89] font-semibold'>Founder</h2>
-                    <div className='flex gap-5 justify-center'>
+                    <div className={`${showDiv ? "visible" : "hidden"} flex gap-5 justify-center`}>
                         <img className='w-[2vw] cursor-pointer' src="img/linkedin-jobs.png" alt="" />
                         <img onClick={() => window.open(umarInsta,"_blank")} className='w-[2vw] cursor-pointer' src="img/ig.png" alt="" />
                     </div>
                 </div>
                 </div>
                 <Swiper
-            className='w-[60vw] mx-auto'
+            className={` w-[60vw] mx-auto`}
             slidesPerView={3}
             spaceBetween={30}
             loop={true}
@@ -203,7 +228,7 @@ const AboutUs = () => {
             >
                 <SwiperSlide
                 className=''>
-                <div className='bg-gray-100 w-[13vw] h-[60vh] rounded-t-full rounded-b-full pt-5 pb-5'>
+                <div className='bg-gray-100 w-[13vw] h-[55vh] rounded-t-full rounded-b-full pt-5 pb-5'>
                     <div className='flex justify-center mt-10 mb-5'>
                         <img className='w-[10vw] rounded-full' src="img/owner.jpg" alt="" />
                     </div>
@@ -217,7 +242,7 @@ const AboutUs = () => {
                 </SwiperSlide>
                 <SwiperSlide
                 className=''>
-                <div className='bg-gray-100 w-[13vw] h-[60vh] rounded-t-full rounded-b-full pt-5 pb-5'>
+                <div className='bg-gray-100 w-[13vw] h-[55vh] rounded-t-full rounded-b-full pt-5 pb-5'>
                     <div className='flex justify-center mt-10 mb-5'>
                         <img className='w-[10vw] rounded-full' src="img/webdev.jpeg" alt="" />
                     </div>
@@ -231,7 +256,7 @@ const AboutUs = () => {
                 </SwiperSlide>
                 <SwiperSlide
                 className=''>
-                <div className='bg-gray-100 w-[13vw] h-[60vh] rounded-t-full rounded-b-full pt-5 pb-5'>
+                <div className='bg-gray-100 w-[13vw] h-[55vh] rounded-t-full rounded-b-full pt-5 pb-5'>
                     <div className='flex justify-center mt-10 mb-5'>
                         <img className='w-[10vw] rounded-full' src="img/profile.png" alt="" />
                     </div>
@@ -245,7 +270,7 @@ const AboutUs = () => {
                 </SwiperSlide>
                 <SwiperSlide
                 className=''>
-                <div className='bg-gray-100 w-[13vw] h-[60vh] rounded-t-full rounded-b-full pt-5 pb-5'>
+                <div className='bg-gray-100 w-[13vw] h-[55vh] rounded-t-full rounded-b-full pt-5 pb-5'>
                     <div className='flex justify-center mt-10 mb-5'>
                         <img className='w-[10vw] rounded-full' src="img/profile.png" alt="" />
                     </div>
