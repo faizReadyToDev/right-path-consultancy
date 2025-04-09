@@ -1,3 +1,4 @@
+import React, { useEffect , useState } from 'react'
 import './App.css'
 import HeroSection from './assets/Components/HeroSection/HeroSection'
 import Navbar from './assets/Components/Navbar/Navbar'
@@ -5,7 +6,6 @@ import Jobs from './assets/Components/Jobs/Jobs'
 import Services from './assets/Components/Services/Services'
 import AboutUs from './assets/Components/AboutUs/AboutUs'
 import Footer from './assets/Components/Footer/Footer'
-import { useEffect , useState } from 'react'
 import ContactUs from './assets/Components/ContactUs/ContactUs'
 import Review from './assets/Components/Review/Review'
 import JobsDetails from './assets/Components/Amazon/Amazon'
@@ -23,6 +23,7 @@ import FreshPrint from './assets/Components/FreshPrint/FreshPrint'
 import Amazon from './assets/Components/Amazon/Amazon'
 import Teleperformance from './assets/Components/Teleperformance/Teleperformance'
 import ScrollToTop from './assets/Components/ScrollToTop/ScrollToTop'
+import MobileFooter from './assets/Components/MobileFooter/MobileFooter'
 
 
 function App() {
@@ -57,9 +58,9 @@ function App() {
         
         </Routes>
        
-
-        <Footer />
        
+        <Footer />
+        <MobileFooter/>       
       
       
        

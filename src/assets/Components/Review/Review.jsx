@@ -1,3 +1,4 @@
+import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
@@ -5,12 +6,39 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/module
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { useEffect, useState } from 'react';
+
 const Review = () => {
 
+    const [slidesPerViews, setSlidesPerViews] = useState(3);
+    useEffect(() => {
+
+        const handleResize = () => {
+            const width = window.innerWidth;
+            if(width <= 750){
+                setSlidesPerViews(1)
+                console.log(slidesPerViews);
+                
+            }else if(width < 1400){
+                setSlidesPerViews(2)
+                console.log(slidesPerViews);
+            }else{
+                setSlidesPerViews(3)
+                console.log(slidesPerViews);
+            }
+        }
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+
+        return () => window.removeEventListener('resize', handleResize);
+        
+    },[slidesPerViews])
     return (
         <>
         
-        <div className="w-[80vw] mx-auto items-center relative mt-20">
+        <div className="w-[80vw] max-sm:w-[100vw] mx-auto items-center relative mt-20 overflow-hidden hidden">
 
             <div className="flex gap-3 items-center">
                 <div className="p-2 rounded-full bg-purple-500">
@@ -22,11 +50,11 @@ const Review = () => {
 
             <div className="">
             <Swiper
-            className='w-[80vw]'
-            slidesPerView={3}
+            className='overflow-visible'
+            slidesPerView={slidesPerViews}
             spaceBetween={30}
             loop={true}
-            modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
+            modules={[Autoplay]}
             pagination={{ clickable: true }}
             autoplay =  {{
                 delay: 1500,
@@ -36,24 +64,24 @@ const Review = () => {
             >
                 <SwiperSlide
                 className=''>
-                <div className='h-[60vh]'>
+                <div className='h-[60vh] sm:flex sm:justify-center relative'>
 
-                    <div className="w-[25vw]">
+                    <div className="xl:w-[25vw] lg:w-[30vw] sm:w-[40vw]">
                         <p className="p-10 border text-lg text-[#696C89] border-[#dededf] rounded-lg">"Right Path helped me land my dream job with ease. The platform's simple interface and genuine job listings made my search stress-free. The team's support during the interview process was incredible!"</p>
             
                     </div>
-                    <div className="absolute bottom-[55px] left-[50px]">
+                    <div className="absolute xl:bottom-[10px] xl:left-[50px] sm:bottom-[-60px] sm:left-[180px]">
                         <div className="inline-block">
 
-                            <img className="w-[5vw] rounded-full" src="img/main-1.png" />
+                            <img className="w-[5vw] sm:w-[8vw] rounded-full" src="img/main-1.png" />
                         </div>
                         <div className="flex  mb-3">
 
-                            <img  className="w-[1vw]" src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img  className="w-[1vw] sm:w-[1.5vw] " src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
                         </div>
                         <h1 className="text-lg text-[#2f00fefe]">Rohit Sharma</h1>
                         <h1 className="text-[#696C89]">Software Engineer</h1>
@@ -63,24 +91,24 @@ const Review = () => {
                 </SwiperSlide>
                 <SwiperSlide
                 className=''>
-                <div className='h-[60vh]'>
+                <div className='h-[60vh] sm:flex sm:justify-center'>
 
-                    <div className="w-[25vw]">
+                    <div className="xl:w-[25vw] lg:w-[30vw] sm:w-[40vw]">
                         <p className="p-10 border text-lg text-[#696C89] border-[#dededf] rounded-lg">"Right Path helped me land my dream job with ease. The platform's simple interface and genuine job listings made my search stress-free. The team's support during the interview process was incredible!"</p>
             
                     </div>
-                    <div className="absolute bottom-[55px] left-[50px]">
+                    <div className=" absolute xl:bottom-[10px] xl:left-[50px] sm:bottom-[-60px] sm:left-[180px]">
                         <div className="inline-block">
 
-                            <img className="w-[5vw] rounded-full" src="img/main-1.png" />
+                            <img className="w-[5vw] sm:w-[8vw] rounded-full" src="img/main-1.png" />
                         </div>
                         <div className="flex  mb-3">
 
-                            <img  className="w-[1vw]" src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img  className="w-[1vw] sm:w-[1.5vw]" src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
                         </div>
                         <h1 className="text-lg text-[#2f00fefe]">Rohit Sharma</h1>
                         <h1 className="text-[#696C89]">Software Engineer</h1>
@@ -90,24 +118,24 @@ const Review = () => {
                 </SwiperSlide>
                 <SwiperSlide
                 className=''>
-                <div className='h-[60vh]'>
+                <div className='h-[60vh] sm:flex sm:justify-center'>
 
-                    <div className="w-[25vw]">
+                    <div className="xl:w-[25vw] lg:w-[30vw] sm:w-[40vw]">
                         <p className="p-10 border text-lg text-[#696C89] border-[#dededf] rounded-lg">"Right Path helped me land my dream job with ease. The platform's simple interface and genuine job listings made my search stress-free. The team's support during the interview process was incredible!"</p>
                        
                     </div>
-                    <div className="absolute bottom-[55px] left-[50px]">
+                    <div className="absolute xl:bottom-[10px] xl:left-[50px] sm:bottom-[-60px] sm:left-[180px]">
                         <div className="inline-block">
 
-                            <img className="w-[5vw] rounded-full" src="img/main-1.png" />
+                            <img className="w-[5vw] sm:w-[8vw] rounded-full" src="img/main-1.png" />
                         </div>
                         <div className="flex  mb-3">
 
-                            <img  className="w-[1vw]" src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img  className="w-[1vw] sm:w-[1.5vw]" src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
                         </div>
                         <h1 className="text-lg text-[#2f00fefe]">Rohit Sharma</h1>
                         <h1 className="text-[#696C89]">Software Engineer</h1>
@@ -116,24 +144,24 @@ const Review = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className='h-[60vh]'>
+                <div className='h-[60vh] sm:flex sm:justify-center'>
 
-                    <div className="w-[25vw]">
+                    <div className="xl:w-[25vw] lg:w-[30vw] sm:w-[40vw]">
                         <p className="p-10 border text-lg text-[#696C89] border-[#dededf] rounded-lg">"Right Path helped me land my dream job with ease. The platform's simple interface and genuine job listings made my search stress-free. The team's support during the interview process was incredible!"</p>
             
                     </div>
-                    <div className="absolute bottom-[55px] left-[50px] z-10">
+                    <div className="absolute xl:bottom-[10px] xl:left-[50px] sm:bottom-[-60px] sm:left-[180px]">
                         <div className="inline-block">
 
-                            <img className="w-[5vw] rounded-full" src="img/main-1.png" />
+                            <img className="w-[5vw] sm:w-[8vw] rounded-full" src="img/main-1.png" />
                         </div>
                         <div className="flex  mb-3">
 
-                            <img  className="w-[1vw]" src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img  className="w-[1vw] sm:w-[1.5vw]" src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
                         </div>
                         <h1 className="text-lg text-[#2f00fefe]">Rohit Sharma</h1>
                         <h1 className="text-[#696C89]">Software Engineer</h1>
@@ -142,23 +170,23 @@ const Review = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className='h-[60vh]'>
+                <div className='h-[60vh] sm:flex sm:justify-center'>
 
-                    <div className="w-[25vw]">
+                    <div className="xl:w-[25vw] lg:w-[30vw] sm:w-[40vw]">
                         <p className="p-10 border text-lg text-[#696C89] border-[#dededf] rounded-lg">"Right Path helped me land my dream job with ease. The platform's simple interface and genuine job listings made my search stress-free. The team's support during the interview process was incredible!"</p>
                     </div>
-                    <div className="absolute bottom-[55px] left-[50px]">
+                    <div className="absolute xl:bottom-[10px] xl:left-[50px] sm:bottom-[-60px] sm:left-[180px]">
                         <div className="inline-block">
 
-                            <img className="w-[5vw] rounded-full" src="img/main-1.png" />
+                            <img className="w-[5vw] sm:w-[8vw] rounded-full" src="img/main-1.png" />
                         </div>
                         <div className="flex  mb-3">
 
-                            <img  className="w-[1vw]" src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
-                            <img className="w-[1vw]"  src="img/star.png" />
+                            <img  className="w-[1vw] sm:w-[1.5vw]" src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
+                            <img className="w-[1vw] sm:w-[1.5vw]"  src="img/star.png" />
                         </div>
                         <h1 className="text-lg text-[#2f00fefe]">Rohit Sharma</h1>
                         <h1 className="text-[#696C89]">Software Engineer</h1>

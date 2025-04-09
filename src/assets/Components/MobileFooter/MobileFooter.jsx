@@ -2,30 +2,13 @@ import React from "react";
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const Footer = () => {
+const MobileFooter = () => {
     const link = "https://www.instagram.com/right_pathconsultancy?igsh=MXZvdmRycDhmb2twdQ%3D%3D";
-    const [showDiv,setShowDiv] = useState(false);
-    useEffect(() => {
-        const handleScroll = () => {
-          if (
-            window.innerHeight + document.documentElement.scrollTop + 1>=
-            document.documentElement.offsetHeight
-          ) {
-            setShowDiv(true);
-          } else {
-            setShowDiv(false);
-          }
-        };
-    
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-      },[]);
 
     const whatsAppHandle = () => {
         const whatsappLink = `https://wa.me/916399010030?text=${encodeURIComponent("Hello, I would like to inquire about...")}`;
         window.open(whatsappLink, "_blank");
     }
-
     return (
 
         <>
@@ -33,18 +16,18 @@ const Footer = () => {
 
           
            
-            <div className={ ` ${showDiv ? "visible" : "scale-0"} z-10 max-sm:hidden`}>
+            <div className="relative mt-10 lg:hidden">
 
         
-            <div className={` fixed bottom-0`}>
-                <img className= "fixed h-[100vh] w-[100vw] bg-center bg-cover  bottom-0"  src="img/footer-bg.jpg" alt="" />
-              <div className="absolute bg-[#2f00ffe2] h-[100vh] w-[100vw] bottom-0">
+            <div className={` `}>
+                <img className= "h-[150vh] sm:h-[159.7vw] md:h-[100vh] w-[130vw] bg-center bg-cover"  src="img/footer-bg.jpg" alt="" />
+              <div className="absolute bg-[#2f00ffe2] w-[100vw] top-0 rounded-t-lg">
 
-                    <div className="xl:flex justify-between lg:p-10 max-sm:p-5 items-center w-[90vw] mx-auto border-b border-[#ffffff24] max-sm:flex-col">
+                    <div className="xl:flex justify-between lg:p-10  max-sm:p-5 items-center w-[90vw] mx-auto border-b border-[#ffffff24] max-sm:flex-col">
 
                     
                         <div className="xl:w-[35vw] max-sm:w-[80vw] max-sm:mx-auto max-sm:text-center max-sm:mb-10">
-                            <h1 className="text-white text-3xl font-bold mb-5">Stay Updated with the Latest Job Opportunities!</h1>
+                            <h1 className="text-white text-3xl font-bold mb-5 sm:mt-10">Stay Updated with the Latest Job Opportunities!</h1>
                             <p className="text-white text-lg font-light">Subscribe to Right Path and receive regular updates on genuine job listings, career tips, and exclusive training programs.</p>
                         </div>
                         <div className="">
@@ -59,15 +42,15 @@ const Footer = () => {
 
                         </div>
 
-                    <div className="md:grid grid-cols-4 px-30 mt-10 border-b border-[#ffffff24] pb-10 max-sm:block">
+                    <div className="px-7 sm:p-10 mt-10 border-b border-[#ffffff24] pb-5">
                     <div>
-                        <h1 className="text-xl font-bold text-white mb-10">Find Us</h1>
+                        <h1 className="text-xl font-bold text-white mb-5">Find Us</h1>
                         <h2 className="text-[#d3caca] ">Mon-Sat:10am-7pm</h2>
                         <h1 className="text-xl font-bold text-white ">Noor Nagar, Ajmal bagh,</h1>
-                        <h1 className='text-xl font-bold text-white mb-10'>Okhla, New Delhi</h1>
+                        <h1 className='text-xl font-bold text-white mb-5'>Okhla, New Delhi</h1>
                         <h2 className="text-[#d3caca]">Send a CV</h2>
                         <h1 className="text-xl font-bold text-white" >rightpathconsultancy001-</h1>
-                        <h1 className='text-xl font-bold text-white mb-10'>-@gmail.com</h1>
+                        <h1 className='text-xl font-bold text-white mb-5'>-@gmail.com</h1>
                         <h1 className="text-[#d3caca]">Social Media</h1>
                         <div className='flex gap-2'>
                             <div onClick={() => window.open(link, '_blank')} className='cursor-pointer p-3 bg-white rounded-full inline-block'>
@@ -83,37 +66,40 @@ const Footer = () => {
                             
                         </div>
                     </div>
-                    <div>
-                        <h1 className="text-xl font-bold text-white mb-10">Support</h1>
-                        <h2 onClick={whatsAppHandle} className="text-[#d3caca] mb-5 cursor-pointer hover:text-white">Help Center</h2> 
-                        <h2 onClick={whatsAppHandle} className="text-[#d3caca] mb-5 cursor-pointer hover:text-white">FAQ's</h2>
-                        <h2 onClick={whatsAppHandle} className="text-[#d3caca] mb-5 cursor-pointer hover:text-white">Privacy Policy</h2>
-                        <h2 onClick={whatsAppHandle} className="text-[#d3caca] mb-5 cursor-pointer hover:text-white">Terms and Conditions</h2>
-                    </div>
-                    <div>
-                        <h1 className="text-xl font-bold text-white mb-10" >Quick Links</h1>
-                        <Link to="/aboutus">
-                            <h2  className="text-[#d3caca] mb-5 hover:text-white cursor-pointer">About Company</h2>
-                        </Link>
-                        <Link to="/services">
-                            <h2 className="text-[#d3caca] mb-5 cursor-pointer hover:text-white">Services</h2>
-                        </Link>
-                        <Link to="/company">
-                            <h2 className="text-[#d3caca] mb-5 cursor-pointer hover:text-white">Jobs</h2>
-                        </Link>
-                        <Link to="/contactus">
-                            <h2 className="text-[#d3caca] mb-5 cursor-pointer hover:text-white">Contact</h2>
-                        </Link>
-                    </div>
-                    <div className="">
-                        <div className="flex justify-center mb-5">
-                            <img className="w-[7vw] rounded-full bg-center bg-cover border-4 border-[#ffffff24]" src="img/logo.jpg" alt="" />
+                    <div className="flex justify-between sm:justify-normal">
+                        <div>
+                            <h1 className="text-xl font-bold text-white mb-5 mt-10">Support</h1>
+                            <h2 onClick={whatsAppHandle} className="text-[#d3caca] mb-3 cursor-pointer hover:text-white">Help Center</h2> 
+                            <h2 onClick={whatsAppHandle} className="text-[#d3caca] mb-3 cursor-pointer hover:text-white">FAQ's</h2>
+                            <h2 onClick={whatsAppHandle} className="text-[#d3caca] mb-3 cursor-pointer hover:text-white">Privacy Policy</h2>
+                            <h2 onClick={whatsAppHandle} className="text-[#d3caca] mb-3 cursor-pointer hover:text-white">Terms and Conditions</h2>
                         </div>
-                        <p className="text-[#d3caca]">Right Path is a trusted platform connecting job seekers with top employers. We provide genuine opportunities, affordable training, and expert HR solutions to empower careers and businesses across India.</p>
+                        <div>
+                            <h1 className="text-xl font-bold text-white mb-5 mt-10" >Quick Links</h1>
+                            <Link to="/aboutus">
+                                <h2  className="text-[#d3caca] mb-3 hover:text-white cursor-pointer">About Company</h2>
+                            </Link>
+                            <Link to="/services">
+                                <h2 className="text-[#d3caca] mb-3 cursor-pointer hover:text-white">Services</h2>
+                            </Link>
+                            <Link to="/company">
+                                <h2 className="text-[#d3caca] mb-3 cursor-pointer hover:text-white">Jobs</h2>
+                            </Link>
+                            <Link to="/contactus">
+                                <h2 className="text-[#d3caca] mb-3 cursor-pointer hover:text-white">Contact</h2>
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div className="mt-10">
+                        <div className="flex justify-center mb-5">
+                            <img className="w-[30vw] sm:w-[15vw] rounded-full bg-center bg-cover border-4 border-[#ffffff24]" src="img/logo.jpg" alt="" />
+                        </div>
+                        <p className="text-[#d3caca] text-center">Right Path is a trusted platform connecting job seekers with top employers. We provide genuine opportunities, affordable training, and expert HR solutions to empower careers and businesses across India.</p>
                     </div>
                 </div>
 
-                    <div className='text-white text-center mt-5'>
+                    <div className='text-white text-center mt-5 text-md'>
                     Copyright © 2025-26 Rigth Path. All rights reserved.
                     </div>
                 </div>
@@ -129,4 +115,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default MobileFooter

@@ -1,3 +1,4 @@
+import React from "react";
 const HandleScroll = () =>{
     window.scrollTo({
         top:0,

@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom"
 
 const Jobs = () => {
@@ -238,28 +239,28 @@ const Jobs = () => {
             </div> */}
 
 
-            <div className="w-[90vw] mx-auto grid grid-cols-3 gap-10"> 
+            <div className="w-[90vw] mx-auto grid 2xl:grid-cols-3 gap-10 lg:grid-cols-2 max-2xl:justify-items-center max-sm:justify-items-center"> 
                 {
                 jobs.map((item,index) => (
                     <Link to={item.job1.link}>
-                    <div className="p-9 inline-block border border-slate-300 rounded-lg  box-shadow" key={index}>
+                    <div className="sm:p-9 inline-block border border-slate-300 rounded-lg  box-shadow max-sm:p-5" key={index}>
                         <div className="flex gap-5 border-b border-slate-300 pb-5">
                             <div className="shadow-xl rounded-full border-2 border-slate-100">
-                                <img className="w-[4vw] " src={item.job1.img} alt="" />
+                                <img className="sm:w-[8vw] md:w-[5vw] lg:w-[4vw] max-sm:w-[10vw]" src={item.job1.img} alt="" />
                             </div>
                             <div className="">
-                                <h1 className="text-xl font-semibold text-[#2f00fefe]">{item.job1.jobTittle}</h1>
+                                <h1 className="sm:text-xl font-semibold text-[#2f00fefe] max-sm:text-sm">{item.job1.jobTittle}</h1>
                                 <h2 className=" text-[#696c89] font-semibold">{item.job1.company}</h2>
                             </div>
                         </div>
 
                         <div className="border-b border-slate-300 pb-5">
                             <div className="flex gap-2 items-center mt-5">
-                                <img className="w-[1vw] h-[2vh]" src="img/location-jobs.png" alt="" />
+                                <img className="sm:w-[1vw] h-[2vh] max-sm:w-[5vw]" src="img/location-jobs.png" alt="" />
                                 <h1 className=" text-[#696c89]" >{item.job1.location}</h1>
                             </div>
                             <div className="flex gap-2 items-center">
-                                <img className="w-[1vw] h-[2vh]" src="img/money-jobs.png" alt="" />
+                                <img className="sm:w-[1vw] h-[2vh] max-sm:w-[5vw]" src="img/money-jobs.png" alt="" />
                                 <h1 className=" text-[#696c89]">{item.job1.salary}</h1>
                             </div>
                             <div className="flex gap-2 items-center">
@@ -272,9 +273,9 @@ const Jobs = () => {
                             </div>
                         </div>
 
-                        <div className="flex gap-10 mt-5">
+                        <div className="flex sm:gap-10 mt-5 max-sm:gap-0">
                             <Link to={item.job1.link}>
-                                <button className="flex items-center gap-2 text-white bg-[#2f00fefe] py-2 px-5 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-cyan-600"> <img className="w-[1.5vw]" src="img/icons8-arrow-50.png" alt="" />View Details</button>
+                                <button className="flex items-center gap-2 text-white bg-[#2f00fefe] py-2 px-5 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-cyan-600 max-sm:text-sm"> <img className="sm:w-[1.5vw] max-sm:w-[5vw]" src="img/icons8-arrow-50.png" alt="" />View Details</button>
                             </Link>
                             <div className="flex items-center gap-2">
                             <img className="w-[1vw]" src="img/time-jobs.png" alt="" />
@@ -283,7 +284,7 @@ const Jobs = () => {
                         </div>
 
                     </div>
-                    </Link>
+                  </Link>  
                 ))
 
                 }

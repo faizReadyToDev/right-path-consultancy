@@ -1,3 +1,5 @@
+import React from "react";
+
 const WhatsAppButton = () =>{
 
     
@@ -16,7 +18,7 @@ const WhatsAppButton = () =>{
 
     return (
         <div onClick={WhatsAppClickHandle} className="bg-green-600 cursor-pointer inline-block fixed bottom-10 right-10 rounded-full p-2 z-10">
-            <img className="w-[3vw] cursor-pointer z-10" src="img/whatsapp.png" alt="" />
+            <img className="w-[3vw] cursor-pointer z-10 max-sm:w-[10vw]" src="img/whatsapp.png" alt="" />
         </div>
     )
 

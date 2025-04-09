@@ -31,9 +31,9 @@ const HeroSection = () => {
 
            
                <div className="bg-[url('/img/main-bg.jpg')] h-[77vh] bg-center bg-no-repeat bg-cover relative brightness-[100%]  opacity-20 rounded-b-4xl"></div>
-                <div className="grid grid-cols-4 absolute top-50 items-center">
+                <div className="grid grid-cols-4 absolute top-50 items-center justify-items-center">
 
-                <div className="">
+                <div className="sm:hidden 2xl:block max-sm:hidden">
                  
                     <div  className="bg-white absolute border border-white shadow-xl inline-block p-4 rounded-full rotate-[10deg] top-27 left-98">
                         <div>
@@ -64,45 +64,45 @@ const HeroSection = () => {
                     
                     </div>
                 </div>
-                <div className="col-span-2">
+                <div className="col-span-2 max-2xl:col-span-full items-center justify-center justify-items-center max-2xl:w-[100vw]">
                     <div className="text-center text-[#2f00fefe]">
-                        <h1 className="mt-20 text-6xl font-bold">Find Your Dream Job</h1>
-                        <h2 className="text-3xl font-semi-bold mb-10">Empowering Careers, One Opportunity at a Time</h2>
-                        <h3 className="mb-20 text-gray-600 text-md">We connect job seekers with top employers across India. Our mission is simple: to provide <span className="font-bold ">genuine, budget-friendly, and skill-based employment opportunities</span> tailored to your aspirations.</h3>
+                        <h1 className="mt-20 text-6xl font-bold max-sm:mt-0 max-sm:text-3xl ">Find Your Dream Job</h1>
+                        <h2 className="text-3xl font-semi-bold mb-10 max-sm:mt-3 max-sm:text-2xl">Empowering Careers, One Opportunity at a Time</h2>
+                        <h3 className="mb-20 text-gray-600 text-md max-sm:mt-0 max-sm:text-md max-sm:m-5 max-2xl:w-[60vw] max-2xl:mx-auto max-sm:w-[80vw] max-sm:mx-auto">We connect job seekers with top employers across India. Our mission is simple: to provide <span className="font-bold ">genuine, budget-friendly, and skill-based employment opportunities</span> tailored to your aspirations.</h3>
                     </div >
                     
-                    <div className="mt-10 ml-20 flex items-center">
+                    <div className="mt-10 ml-20 sm:ml-0 max-sm:ml-0 flex items-center max-sm:flex-col max-sm:justify-center">
                         <Link to="/company">
-                            <button className="flex items-center gap-4 text-white bg-[#2f00fefe] py-2 px-10 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-blue-600"> <img className="w-[1.5vw]" src="img/icons8-arrow-50.png" alt="" /> Get Started</button>
+                            <button className="flex items-center gap-4 text-white bg-[#2f00fefe] sm:py-2 sm:px-10 max-sm:px-3 max-sm:py-2 max-sm:mb-5 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-blue-600 "> <img className="sm:w-[3vw] md:w-[1.5vw] max-sm:w-[6vw]" src="img/icons8-arrow-50.png" alt="" /> Get Started</button>
                         </Link>
 
-                        <div className="flex items-center">
-                            <div className="flex relative items-center">
+                        <div className="flex items-center max-sm:flex-col max-sm:mt-3">
+                            <div className="flex relative justify-center items-center max-sm:justify-center">
 
-                                <div className="w-[4vw] border-[3.5px] border-white rounded-full absolute left-[15px]">
+                                <div className="w-[4vw] max-sm:w-[8vw] border-[3.5px] border-white rounded-full absolute sm:left-[10px] md:left-[10px] lg:left-[15px] max-sm:right-[20px]">
                                     <img className="rounded-full" src="img/main-1.png" alt="" />
                                 </div>
-                                <div className=" w-[4vw] border-[3.5px] border-white rounded-full absolute left-[60px]">
+                                <div className=" w-[4vw] max-sm:w-[8vw] border-[3.5px] border-white rounded-full absolute sm:left-[30px] md:left-[40px] lg:left-[60px] max-sm:right-[0px]">
                                     <img className="rounded-full" src="img/main-2.png" alt="" />
                                 </div>
-                                <div className=" w-[4vw] border-[3.5px] border-white rounded-full absolute left-[105px]">
+                                <div className=" w-[4vw] max-sm:w-[8vw] border-[3.5px] border-white rounded-full absolute sm:left-[55px] md:left-[65px] lg:left-[105px] max-sm:right-[-20px]">
                                     <img className="rounded-full" src="img/main-3.jpg" alt="" />
                                 </div>
-                                <div className=" w-[4vw] border-[3.5px] border-white rounded-full absolute left-[150px]">
+                                <div className=" w-[4vw] max-sm:w-[8vw] border-[3.5px] border-white rounded-full absolute sm:left-[80px] md:left-[90px] lg:left-[150px] max-sm:right-[-40px]">
                                     <img className="rounded-full" src="img/main-4.jpg" alt="" />
                                 </div>
                             </div>
-                            <span className="text-[#2f00fefe] font-bold ml-[220px]">5K+ Active Members</span>
+                            <span className="text-[#2f00fefe] font-bold sm:ml-[120px] md:ml-[150px] lg:ml-[220px] max-sm:ml-0 max-sm:mt-3">5K+ Active Members</span>
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className="sm:hidden 2xl:block max-sm:hidden">
     
                     <div className="border border-white shadow-xl bg-white inline-block p-5 rounded-full rotate-[-30deg] absolute top-50 right-50">
                         <svg aria-hidden="true" className="w-[1vw]" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path fill="#008ECC" d="M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85-9.51-2.55-17.87-7.45-25.43-13.32L1.2 448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 9.58-19.5 0-37.82-7.59-51.61-21.37zM382.8 448.7l-45.37-111.24c-7.56 5.88-15.92 10.77-25.43 13.32-21.07 5.64-16.45 3.18-25.12 11.85-13.79 13.78-32.12 21.37-51.62 21.37-12.44 0-24.47-3.55-35.31-9.58L252 502.04c4.39 10.77 18.44 13.4 26.43 4.96l36.25-38.28 52.69 2.01c11.62.44 19.82-11.27 15.43-22.03zM263 340c15.28-15.55 17.03-14.21 38.79-20.14 13.89-3.79 24.75-14.84 28.47-28.98 7.48-28.4 5.54-24.97 25.95-45.75 10.17-10.35 14.14-25.44 10.42-39.58-7.47-28.38-7.48-24.42 0-52.83 3.72-14.14-.25-29.23-10.42-39.58-20.41-20.78-18.47-17.36-25.95-45.75-3.72-14.14-14.58-25.19-28.47-28.98-27.88-7.61-24.52-5.62-44.95-26.41-10.17-10.35-25-14.4-38.89-10.61-27.87 7.6-23.98 7.61-51.9 0-13.89-3.79-28.72.25-38.89 10.61-20.41 20.78-17.05 18.8-44.94 26.41-13.89 3.79-24.75 14.84-28.47 28.98-7.47 28.39-5.54 24.97-25.95 45.75-10.17 10.35-14.15 25.44-10.42 39.58 7.47 28.36 7.48 24.4 0 52.82-3.72 14.14.25 29.23 10.42 39.59 20.41 20.78 18.47 17.35 25.95 45.75 3.72 14.14 14.58 25.19 28.47 28.98C104.6 325.96 106.27 325 121 340c13.23 13.47 33.84 15.88 49.74 5.82a39.676 39.676 0 0 1 42.53 0c15.89 10.06 36.5 7.65 49.73-5.82zM97.66 175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 96.02-42.24 96.02-94.34 96.02-94.34-42.99-94.34-96.02z"></path></svg>
                     </div>
 
-                    <div className="border bg-white border-white shadow-xl inline-block p-4 rounded-lg rotate-[20deg] absolute bottom-[-40px]">
+                    <div className="border bg-white border-white shadow-xl inline-block p-4 rounded-lg rotate-[20deg] absolute bottom-[-40px] right-70">
                         <svg aria-hidden="true" className="w-[1.5vw]" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path fill="red" d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"></path></svg>
                     </div>
 
@@ -131,63 +131,63 @@ const HeroSection = () => {
             </div>
           
 
-            <div className=" h-[30vh] items-center shadow-xl rounded-4xl bg-slate-100 justify-center py-10 animationSlider overflow-x-hidden">
+            <div className=" h-[30vh] items-center shadow-xl rounded-4xl bg-slate-100 justify-center py-10 animationSlider overflow-x-hidden max-sm:h-[30vh]">
                 <h1 className="text-gray-500 text-center font-semibold mb-15">Collaborating with <span className="text-blue-800 font-bold">3200+ </span>international renowned companies</h1>
                 <div className="flex  justify-evenly gap-14 logo-slider ">
-                    <img  className="w-[10vw]" src="img/company-1.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-2.png" alt="" />
-                    <img  className="w-[10vw]" src="img/company-3.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-4.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-5.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-6.png" alt="" />
-                    <img  className="w-[10vw]" src="img/company-7.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-8.png" alt="" />
+                    <img  className="w-[10vw] max-sm:w-[40vw]" src="img/company-1.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-2.png" alt="" />
+                    <img  className="w-[10vw] max-sm:w-[40vw]" src="img/company-3.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-4.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-5.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-6.png" alt="" />
+                    <img  className="w-[10vw] max-sm:w-[40vw]" src="img/company-7.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-8.png" alt="" />
 
 
-                    <img  className="w-[10vw]" src="img/company-1.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-2.png" alt="" />
-                    <img  className="w-[10vw]" src="img/company-3.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-4.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-5.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-6.png" alt="" />
-                    <img  className="w-[10vw]" src="img/company-7.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-8.png" alt="" />
-                    <img  className="w-[10vw]" src="img/company-1.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-2.png" alt="" />
-                    <img  className="w-[10vw]" src="img/company-3.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-4.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-5.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-6.png" alt="" />
-                    <img  className="w-[10vw]" src="img/company-7.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-8.png" alt="" />
-                    <img  className="w-[10vw]" src="img/company-1.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-2.png" alt="" />
-                    <img  className="w-[10vw]" src="img/company-3.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-4.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-5.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-6.png" alt="" />
-                    <img  className="w-[10vw]" src="img/company-7.png" alt="" />
-                    <img className="w-[10vw]"  src="img/company-8.png" alt="" />
+                    <img  className="w-[10vw] max-sm:w-[40vw]" src="img/company-1.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-2.png" alt="" />
+                    <img  className="w-[10vw] max-sm:w-[40vw]" src="img/company-3.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-4.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-5.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-6.png" alt="" />
+                    <img  className="w-[10vw] max-sm:w-[40vw]" src="img/company-7.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-8.png" alt="" />
+                    <img  className="w-[10vw] max-sm:w-[40vw]" src="img/company-1.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-2.png" alt="" />
+                    <img  className="w-[10vw] max-sm:w-[40vw]" src="img/company-3.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-4.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-5.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-6.png" alt="" />
+                    <img  className="w-[10vw] max-sm:w-[40vw]" src="img/company-7.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-8.png" alt="" />
+                    <img  className="w-[10vw] max-sm:w-[40vw]" src="img/company-1.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-2.png" alt="" />
+                    <img  className="w-[10vw] max-sm:w-[40vw]" src="img/company-3.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-4.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-5.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-6.png" alt="" />
+                    <img  className="w-[10vw] max-sm:w-[40vw]" src="img/company-7.png" alt="" />
+                    <img className="w-[10vw] max-sm:w-[40vw]"  src="img/company-8.png" alt="" />
 
                 </div>
 
             </div>
 
-            <div className="flex justify-between mx-auto bg-white  rounded-4xl p-20">
-                <div className="w-[40vw]">
+            <div className="flex justify-between max-2xl:mx-auto bg-white  rounded-4xl sm:p-20 md:flex-col sm:flex-col max-sm:flex-col lg:flex-row max-sm:p-0 max-sm:pt-10 max-sm:mt-0">
+                <div className="w-[40vw] sm:w-[50vw] sm:mx-auto sm:mb-5 max-sm:w-[80vw] max-sm:mx-auto max-sm:mb-5 ">
                     <h1 className="text-4xl text-[#2f00fefe] font-bold mb-3">Find The One That Suits You</h1>
                     <h2 className="text-[#696C89] ">See your opportunity in the highest job demand around the world and choose your job dream & make your future bright. Discover your next career move!</h2>
                 </div>
-                <div className="flex gap-10">
+                <div className="flex gap-10 max-sm:gap-5 max-sm:justify-center sm:justify-center">
                     
-                        <div className="flex-col justify-end">
+                        <div className="flex-col justify-end max-sm:p-4">
                         <h1 className="text-4xl text-[#2f00fefe] font-bold mb-3 flex justify-end">764K</h1>
                         <div className="flex mb-3 justify-end">
-                            <img className="w-[1vw]" src="img/star.png" alt="" />
-                            <img className="w-[1vw]" src="img/star.png" alt="" />
-                            <img className="w-[1vw]" src="img/star.png" alt="" />
-                            <img className="w-[1vw]" src="img/star.png" alt="" />
-                            <img className="w-[1vw]" src="img/star.png" alt="" />
+                            <img className="w-[1vw] max-sm:w-[3vw]" src="img/star.png" alt="" />
+                            <img className="w-[1vw] max-sm:w-[3vw]" src="img/star.png" alt="" />
+                            <img className="w-[1vw] max-sm:w-[3vw]" src="img/star.png" alt="" />
+                            <img className="w-[1vw] max-sm:w-[3vw]" src="img/star.png" alt="" />
+                            <img className="w-[1vw] max-sm:w-[3vw]" src="img/star.png" alt="" />
                         </div>
                         <h2 className="text-[#696C89] flex justify-end">Satisfied People</h2>
                         </div>
@@ -196,16 +196,16 @@ const HeroSection = () => {
                
               
 
-                    <div className="border-l border-[#dededf] px-6  ">
+                    <div className="border-l border-[#dededf] sm:px-6 max-sm:p-4">
 
                         <h1 className="text-4xl text-[#2f00fefe] font-bold mb-3 flex justify-end">1,812+K</h1>
                         <div className="flex  mb-3 justify-end">
 
-                            <img  className="w-[1vw]" src="img/star.png" alt="" />
-                            <img className="w-[1vw]"  src="img/star.png" alt="" />
-                            <img className="w-[1vw]"  src="img/star.png" alt="" />
-                            <img className="w-[1vw]"  src="img/star.png" alt="" />
-                            <img className="w-[1vw]"  src="img/star.png" alt="" />
+                            <img  className="w-[1vw] max-sm:w-[3vw]" src="img/star.png" alt="" />
+                            <img className="w-[1vw] max-sm:w-[3vw]"  src="img/star.png" alt="" />
+                            <img className="w-[1vw] max-sm:w-[3vw]"  src="img/star.png" alt="" />
+                            <img className="w-[1vw] max-sm:w-[3vw]"  src="img/star.png" alt="" />
+                            <img className="w-[1vw] max-sm:w-[3vw]"  src="img/star.png" alt="" />
                         </div>
                         <h2 className="text-[#696C89] flex justify-end">Global Company</h2>
                     </div>
