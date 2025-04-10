@@ -31,7 +31,7 @@ const HeroSection = () => {
 
            
                <div className="bg-[url('/img/main-bg.jpg')] h-[77vh] bg-center bg-no-repeat bg-cover relative brightness-[100%]  opacity-20 rounded-b-4xl"></div>
-                <div className="grid grid-cols-4 absolute top-50 items-center justify-items-center max-sm:top-20">
+                <div className="grid grid-cols-4 absolute top-10 items-center justify-items-center max-sm:top-20">
 
                 <div className="sm:hidden 2xl:block max-sm:hidden">
                  
