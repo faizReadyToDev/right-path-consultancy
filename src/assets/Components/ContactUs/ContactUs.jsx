@@ -207,14 +207,14 @@ const ContactUs = () => {
                 <div className="shadow-xl p-10 rounded-lg border border-[#dededf]">
                     <h1 className="text-2xl text-[#2f00fefe] font-semibold mb-10">Leave a Message</h1>
                     <div className="flex gap-5 mb-5 max-sm:flex-col">
-                        <input className="bg-slate-100 p-4 border border-[#dededf] rounded-lg" type="text" placeholder="Your Name"/>
-                        <input className="bg-slate-100 p-4 border border-[#dededf] rounded-lg" type="text" placeholder="Your Email"/>
+                        <input className="bg-slate-100 p-4 border border-[#dededf] rounded-lg max-sm:w-[71vw] max-sm:pr-0" type="text" placeholder="Your Name"/>
+                        <input className="bg-slate-100 p-4 border border-[#dededf] rounded-lg max-sm:w-[71vw] max-sm:pr-0" type="text" placeholder="Your Email"/>
                     </div>
                     <div className="mb-5 ">
-                        <input className="bg-slate-100 pr-66 pl-4 rounded-lg py-4 border border-[#dededf] max-sm:pr-8" type="text" placeholder="Subject"/>
+                        <input className="bg-slate-100 pr-66 pl-4 rounded-lg py-4 border border-[#dededf] max-sm:w-[71vw] max-sm:pr-0" type="text" placeholder="Subject"/>
                     </div>
                     <div>
-                        <input className="bg-slate-100 text-black pr-66 pl-4 rounded-lg pt-4 pb-30 border border-[#dededf] mb-5 max-sm:pr-8" type="text" placeholder="Message"/>
+                        <input className="bg-slate-100 text-black pr-66 pl-4 rounded-lg pt-4 pb-30 border border-[#dededf] mb-5 max-sm:w-[71vw] max-sm:pr-0" type="text" placeholder="Message"/>
                     </div>
                     <button className="flex items-center gap-2 text-white bg-[#2f00fefe] py-2 px-5 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-blue-600">Send Message</button>
                 </div>

@@ -26,6 +26,7 @@ import ScrollToTop from './assets/Components/ScrollToTop/ScrollToTop'
 import MobileFooter from './assets/Components/MobileFooter/MobileFooter'
 
 
+
 function App() {
 
 
@@ -70,6 +71,8 @@ function App() {
 
 
       </Router>
+
+ 
     </>
   )
 }
