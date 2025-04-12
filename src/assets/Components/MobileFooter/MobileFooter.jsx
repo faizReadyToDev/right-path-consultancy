@@ -33,7 +33,7 @@ const MobileFooter = () => {
                         <div className="">
                             <div className="flex gap-2 max-sm:flex-col">
                                     <input className="bg-white border border-[#ffffff24] rounded-md py-5 pr-40 pl-5 max-sm:pr-10 max-sm:pl-5" type="text" placeholder="Email"/>
-                                    <button className="flex items-center gap-4 text-white py-2 px-10 rounded-md border cursor-pointer hover:bg-blue-400"> <img className="" src="img/arrow-right.png" alt="" />  Subscribe</button>
+                                    <button className="flex items-center gap-4 text-white py-2 px-10 rounded-md border cursor-pointer hover:bg-blue-400 max-sm:justify-center"> <img className="" src="img/arrow-right.png" alt="" />  Subscribe</button>
                                 </div>
                                 <div className="mt-5">
                                     <h1 className="text-white max-sm:text-center">✌️ We Promise not spam.</h1>

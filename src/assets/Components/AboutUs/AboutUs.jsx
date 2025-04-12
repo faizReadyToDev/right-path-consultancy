@@ -310,7 +310,7 @@ const AboutUs = () => {
                     </div>
                     <div className="flex gap-2 max-sm:flex-col">
                         <input className=" bg-white border border-slate-300 rounded-md pr-220 pl-5 max-sm:pr-13 max-sm:py-2" type="text" placeholder="Your Email"/>
-                        <button className="flex items-center gap-4 text-white bg-[#2f00fefe] py-2 px-10 rounded-md cursor-pointer hover:shadow-sm hover:shadow-cyan-900"> <img className="w-[1.5vw]" src="img/icons8-arrow-50.png" alt="" /> Subscribe</button>
+                        <button className="flex items-center gap-4 text-white bg-[#2f00fefe] py-2 px-10 rounded-md cursor-pointer hover:shadow-sm hover:shadow-cyan-900"> <img className="w-[1.5vw] max-sm:w-[5vw]" src="img/icons8-arrow-50.png" alt="" /> Subscribe</button>
                     </div>
                     <div className="mt-5">
                         <h1 className="text-[#696C89] max-sm:text-center">✌️ We Promise not spam.</h1>

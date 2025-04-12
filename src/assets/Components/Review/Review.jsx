@@ -38,7 +38,7 @@ const Review = () => {
     return (
         <>
         
-        <div className="w-[80vw] max-sm:w-[100vw] mx-auto items-center relative mt-20 overflow-hidden hidden">
+        <div className="w-[80vw] max-sm:w-[100vw] mx-auto items-center relative mt-20 overflow-hidden max-md:hidden max-sm:hidden">
 
             <div className="flex gap-3 items-center">
                 <div className="p-2 rounded-full bg-purple-500">
