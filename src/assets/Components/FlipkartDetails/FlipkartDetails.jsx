@@ -1,6 +1,11 @@
 import React from "react";
 const FlipkartDetails  = () => {
 
+    const whatsAppHandle = () => {
+        const whatsappLink = `https://wa.me/916399010030?text=${encodeURIComponent("Hello, I would like to inquire about...")}`;
+        window.open(whatsappLink, "_blank");
+    }
+
     return (
         <>
         
@@ -38,7 +43,7 @@ const FlipkartDetails  = () => {
                             </div>
                         </div>
                         <div className="items-center flex justify-center mt-5">
-                            <button className="flex items-center gap-2 text-white bg-[#2f00fefe] py-2 px-5 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-cyan-600"> 
+                            <button  onClick={whatsAppHandle} className="flex items-center gap-2 text-white bg-[#2f00fefe] py-2 px-5 rounded-lg shadow-xl shadow-cyan-900 cursor-pointer hover:shadow-cyan-600"> 
                             <svg aria-hidden="true" class="w-[1vw] max-sm:w-[5vw]" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
                                  APPLY FOR JOB</button>
                         </div>
