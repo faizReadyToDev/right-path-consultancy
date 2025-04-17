@@ -50,15 +50,36 @@
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-@keyframes slide-right{
-   from {
-        transform: translateX(100vw);
-   }
-   to{
-    transform: translateX(0);
-   }
-}
 
 .navSlider{
     transition: all 0.3s ease-in-out;
+}
+
+@keyframes slide-right{
+   from {
+    transform: rotate(0deg);
+   }
+   to{
+    transform: rotate(-360deg);
+   }
+}
+
+.rotate-pic{
+   animation: ease-out 1s slide-right;
+}
+
+@keyframes hover-effect{
+    10% {
+        opacity: 50%;
+    }
+    40% {
+        opacity: 100;
+    }
+    50%{
+        opacity: 50%;
+    }
+}
+
+.hover-balls{
+    animation: ease-in-out 1.5s hover-effect;
 }
